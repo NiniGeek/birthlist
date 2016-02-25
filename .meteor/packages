@@ -18,3 +18,4 @@ autopublish             # Publish all data to the clients (for prototyping)
 angular
 accounts-password
 dotansimha:accounts-ui-angular
+angularui:angular-ui-router
