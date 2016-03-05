@@ -1,0 +1,15 @@
+{
+  "public": {
+  },
+  "private": {
+    "defaultUser": {
+      "username": "username",
+      "email": "email",
+      "password": "password",
+      "profile": {
+        "first_name": "fname",
+        "last_name": "lname"
+      }
+    }
+  }
+}

@@ -14,8 +14,20 @@ tracker                 # Meteor's client-side reactive programming library
 standard-minifiers      # JS/CSS minifiers run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 
-autopublish             # Publish all data to the clients (for prototyping)
 angular
 accounts-password
-dotansimha:accounts-ui-angular
 angularui:angular-ui-router
+dotansimha:accounts-ui-angular
+tmeasday:publish-counts
+check
+email
+less
+angularui:angular-ui-bootstrap
+nemo64:bootstrap
+planettraining:material-design-icons
+cfs:standard-packages
+cfs:gridfs
+danialfarid:ng-file-upload
+alexk111:ng-img-crop
+vitalets:angular-xeditable
+netanelgilad:angular-sortable-view

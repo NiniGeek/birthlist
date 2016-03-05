@@ -1,14 +1,21 @@
 let modulesToLoad = [
     'angular-meteor',
     'ui.router',
-    'accounts.ui'
+    'accounts.ui',
+    'ui.bootstrap',
+    'ngFileUpload',
+    'ngImgCrop',
+    'xeditable',
+    'angular-sortable-view'
 ];
 
 
 angular.module('birthlist', modulesToLoad);
 
 function onReady() {
-    angular.bootstrap(document, ['birthlist']);
+    angular.bootstrap(document, ['birthlist'], {
+        strictDi: true
+    });
 }
 
 if (Meteor.isCordova)

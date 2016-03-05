@@ -1,0 +1,21 @@
+<div class="jumbotron text-center">
+    <h3> Sign in </h3>
+    <form name="loginForm">
+        <div class="form-group">
+            <label class="control-label" for="email"> Email </label>
+            <input type="email" name="email" id="email" class="form-control" ng-model="login.credentials.email" aria-label="email" placeholder="Email" required/>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': login.credentials.password.$touched && login.credentials.password.$invalid }" >
+            <label class="control-label" for="password"> Password </label>
+            <input type="password" name="password" id="password" class="form-control" ng-model="login.credentials.password" aria-label="password" placeholder="Password" required/>
+        </div>
+        <div>
+            <a class="btn btn-danger" ui-sref="resetpw">Forgot password?</a>
+            <button type="submit" class="btn btn-default" ng-click="login.login()" aria-label="login" ng-disabled="login.credentials.$invalid()">Sign In</button>
+        </div>
+    </form>
+    <div class="text-left has-warning" ng-show="login.error">
+        {{ login.error }}
+    </div>
+</div>
+

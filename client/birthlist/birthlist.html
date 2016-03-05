@@ -1,0 +1,19 @@
+<div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ui-sref="home">birthlist</a>
+        </div>
+        <div class="navbar-right navbar-text">
+            <div ng-show="birthlist.isLoggedIn">{{ birthlist.currentUser | displayName }}</div>
+            <button type="button" class="btn btn-default navbar-btn" ng-show="birthlist.isLoggedIn" ng-click="birthlist.logout()">Logout</button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" ui-view></div>
